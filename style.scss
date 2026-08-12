@@ -1,0 +1,1520 @@
+// Reset
+* {
+    margin: 0;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Inter', sans-serif;
+    color: rgb(84, 82, 82);
+    box-sizing: border-box;
+   
+    
+}
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.btn {
+    background-color: rgb(137, 206, 137);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    margin-top: 8%;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: fit-content;
+    color: rgb(84, 82, 82);
+
+    &:hover {
+        background: black;
+        color: rgb(137, 206, 137);
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: rgb(84, 82, 82);
+    display: flex;
+    justify-content: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(137, 206, 137);
+    display: flex;
+}
+
+h4 {
+    color: rgb(137, 206, 137);
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+}
+
+p {
+    line-height: 1.4;
+    color: rgb(84, 82, 82);
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0 0.5rem;
+    color: rgb(70, 70, 72);
+
+    &--green {
+        color: rgb(137, 206, 137);
+    }
+}
+
+.card_text {
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+    font-size: 0.9rem;
+    flex: 0.5;
+}
+
+.btn-card {
+    @extend .btn;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    align-self: center;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        height: 100%;
+        margin-left: 25%;
+        object-fit: contain;
+    }
+
+    nav {
+        display: flex;
+        flex: 2;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+        margin-right: 5%;
+
+        .btn {
+            margin: 0;
+            line-height: 1;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                color: rgb(137, 206, 137);
+            }
+            i {
+                display: none !important;
+            }
+        }
+       
+    }
+    #menu-toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    /* CHICA GOLF */
+    #box1 {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-image: url(/img/2038.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;
+
+        /* TEXTO */
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            &_title {
+                font-size: 1.5rem;
+                color: white;
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+                color: white;
+                margin-bottom: 1.2rem;
+            }
+
+            &_text {
+                font-size: 1.1rem;
+                color: white;
+                margin-bottom: 2rem;
+            }
+
+            .btn {
+                margin-top: 60px;
+            }
+        }
+    }
+
+    /* CHICO GOLF */
+    #box2 {
+        display: flex;
+        min-height: 30rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4%;
+        padding: 4% 6%;
+
+        h3 {
+            margin-top: 1.25rem;
+        }
+
+        h2 {
+            margin-top: 1.875rem;
+        }
+
+        p {
+            margin-top: 1.25rem;
+        }
+
+        .about-image {
+            display: flex;
+            flex: 0.5;
+            max-height: 30rem;
+            background-image: url(/img/cerca-joven-hombre-concentrado-disparando-pelota-golf.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            flex: 0.5;
+            align-content: center;
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                color: rgb(84, 82, 82);
+                padding-right: 10%;
+                padding-top: 1%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    /* TARJETAS */
+    #box3 {
+        display: flex;
+        min-height: 17.5rem; // antes 35vh
+        flex-direction: row;
+        background: linear-gradient(rgb(137, 206, 137), 0.4%, transparent);
+        justify-content: space-between;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+        .card {
+            margin-left: 3%;
+            margin-right: 3%;
+
+            .icon-course,
+            .icon-club,
+            .icon-academy,
+            .icon-fitness {
+                height: 80px;
+                background-size: 40px;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-top: 20px;
+            }
+
+            .icon-course {
+                background-image: url(/img/001-jugador-de-golf.png);
+            }
+
+            .icon-club {
+                background-image: url(/img/002-torneo.png);
+            }
+
+            .icon-academy {
+                background-image: url(/img/003-birrete.png);
+            }
+
+            .icon-fitness {
+                background-image: url(/img/004-levantador-de-pesas.png);
+            }
+        }
+    }
+
+    /* tarjetas ladies/kids */
+    #box4 {
+        display: flex;
+        min-height: 35rem; // antes 70vh
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 241, 241);
+        border-bottom-left-radius: 2%;
+
+        h3 {
+            margin-top: 3%;
+        }
+
+        .club-content_text {
+            font-size: 1.1rem;
+            color: black;
+            margin-bottom: 2rem;
+        }
+
+        .cards {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 3%;
+            gap: 6%;
+
+            .card {
+                overflow: hidden;
+
+                .img-team,
+                .img-ladies,
+                .img-kids {
+                    aspect-ratio: 3 / 2;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                .img-team {
+                    background-image: url(/img/equipo.jpeg);
+                    background-size: 120%;
+                }
+
+                .img-ladies {
+                    background-image: url(/img/jugador-golf.jpg);
+                    background-size: 110%;
+                }
+
+                .img-kids {
+                    background-image: url(/img/niño_golf.jpeg);
+                    background-size: 110%;
+                }
+
+                .btn-card {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    /* FORMULARIO */
+    #box5 {
+        display: flex;
+        min-height: 30rem; // antes 60vh
+        background-image: url(/img/fondo_form\ copia.jpg);
+        background-size: cover;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        padding-left: 7%;
+        padding-right: 7%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.25)), url(/img/fondo_form\ copia.jpg);
+
+        .join-intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            flex: 1;
+            margin-right: 10%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+
+            h2 {
+                color: white;
+            }
+
+            &_text {
+                color: white;
+                line-height: 1.5;
+            }
+        }
+
+        .join-form {
+            border-radius: 8px;
+            background-color: white;
+            display: flex;
+            flex: 1;
+            margin: 60px;
+            form {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 30px;
+            
+                .form-field {
+                    width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 5px;
+            
+                    &_full {
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+            
+                    label {
+                        margin-bottom: 5px;
+                        padding-top: 10px;
+                    }
+            
+                    input {
+                        border: none;
+                        background-color: rgb(196, 224, 196);
+                        height: 40px;
+                        padding: 6px 10px;
+                        padding-top: 10px;
+                        border-radius: 6px;
+                    }
+            
+                    textarea {
+                        border: none;
+                        background-color: rgb(196, 224, 196);
+                        height: 70px;
+                        padding: 6px 10px;
+                        resize: vertical;
+                        padding-top: 10px;
+                        border-radius: 6px;
+                    }
+                }
+            
+                .btn {
+                    width: 50%;
+                    border-radius: 50px;
+                    margin: 10px auto 0;
+                    margin-top: 30px;
+                }
+            }
+        }
+
+            
+    }
+
+    /* Premios */
+    #box6 {
+        display: flex;
+        flex-direction: row;
+        min-height: 10rem; // antes 20vh
+        margin: 1%;
+        margin-right: 6%;
+
+        .data-block {
+            display: flex;
+            flex: 1;
+
+            >div {
+                display: flex;
+                align-items: center;
+            }
+
+            &_number {
+                font-size: 2.5rem; // antes 4vw
+                flex: 0.3;
+                justify-content: center;
+            }
+
+            &_plus {
+                font-size: 1.5rem; // antes 2vw
+                color: rgb(154, 198, 154);
+                flex: 0.2;
+            }
+
+            &_label {
+                font-size: 1rem; // antes 1.2vw
+                flex: 0.3;
+                padding-bottom: 12%;
+            }
+        }
+
+        .icon-members,
+        .icon-trainers,
+        .icon-professionals,
+        .icon-awards {
+            flex: 1;
+            background-position: 85% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .icon-members {
+            background-image: url(/img/002-red.png);
+            background-size: 30%;
+        }
+
+        .icon-trainers {
+            background-image: url(/img/001-usuario.png);
+            background-size: 25%;
+        }
+
+        .icon-professionals {
+            background-image: url(/img/004-tarjeta-de-miembro.png);
+            background-size: 40%;
+        }
+
+        .icon-awards {
+            background-image: url(/img/003-medalla.png);
+            background-size: 30%;
+        }
+    }
+
+    /* Miembros destacados */
+    #box7 {
+        display: flex;
+        min-height: 25rem;
+        padding-top: 4%;
+        padding-left: 7%;
+        padding-right: 7%;
+        background: linear-gradient(rgb(137, 206, 137), 0.4%, transparent);
+
+        .btn-mobile-discover {
+            display: none;
+        }
+
+        .members-intro {
+            display: flex;
+            flex: 1.2;
+            flex-direction: column;
+            justify-content: left;
+            padding-bottom: 16%;
+            margin-left: 1%;
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 10%;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 5%;
+            }
+
+            .member_text {
+                flex: 2.5;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: left;
+                padding-left: 1%;
+            }
+        }
+
+        .member-card {
+            display: flex;
+            flex: 1;
+            margin-left: 2%;
+            border-radius: 2%;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 4px 4px 6px rgb(170, 170, 170);
+
+            .card_role {
+                display: flex;
+                justify-content: center;
+                font-size: 1rem; // antes 1.2vw
+                margin-top: 1.25rem;
+                margin-bottom: 1rem;
+            }
+
+            .card_social {
+                display: flex;
+                height: 37px;
+                margin-bottom: 1rem;
+            }
+
+            .card_text {
+                margin-bottom: 1rem;
+            }
+
+            .social-fb,
+            .social-in,
+            .social-mail {
+                flex: 1;
+            }
+        }
+
+        .photo-1,
+        .photo-2,
+        .photo-3 {
+            display: flex;
+            flex: 5;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 2%;
+            border-top-right-radius: 2%;
+        }
+
+        .photo-1 {
+            background-image: url(/img/chico1.jpg);
+            background-position: 50% 50%;
+        }
+
+        .photo-2 {
+            background-image: url(/img/chico2.jpg);
+            background-position: 50% 50%;
+        }
+
+        .photo-3 {
+            background-image: url(/img/chica3.jpg);
+            background-position: 50% 30%;
+        }
+
+        .social-fb,
+        .social-in,
+        .social-mail {
+            display: flex;
+            flex: 1;
+            background-size: 20%;
+            background-repeat: no-repeat;
+            margin-top: 5%;
+        }
+
+        .social-fb {
+            background-image: url(/img/012-simbolo-de-la-aplicacion-de-facebook.png);
+            background-position: 90% 50%;
+        }
+
+        .social-in {
+            background-image: url(/img/013-linkedin.png);
+            background-position: 50% 50%;
+        }
+
+        .social-mail {
+            background-image: url(/img/014-bandeja-de-entrada.png);
+            background-position: 10% 50%;
+        }
+    }
+
+    #box8 {
+        background-color: rgb(244, 241, 241);
+        display: flex;
+        min-height: 28rem; 
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 4%;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .benefits {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-top: 2rem;
+
+            .benefit {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+
+                .card_title {
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1rem;
+                    display: flex;
+                    flex: 0.1;
+                }
+
+                .card_text {
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.85rem; // antes 1.1vw
+                    display: flex;
+                    flex: 0.3;
+                    padding: 2%;
+                }
+            }
+
+            .icon-professional {
+                background-image: url(/img/010-gerente.png);
+                background-size: 15%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: flex;
+                flex: 0.2;
+            }
+
+            .icon-prestigious {
+                background-image: url(/img/006-prestigio.png);
+                background-size: 15%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: flex;
+                flex: 0.2;
+            }
+
+            .icon-monthly {
+                background-image: url(/img/007-calendario.png);
+                background-size: 15%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: flex;
+                flex: 0.2;
+            }
+
+            .icon-support {
+                background-image: url(/img/008-apoyo-tecnico.png);
+                background-size: 15%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: flex;
+                flex: 0.2;
+            }
+        }
+    }
+
+    /* LATEST NEWS */
+    #box9 {
+        background-color: rgb(244, 241, 241);
+        background: linear-gradient(rgb(137, 206, 137), 0.4%, transparent);
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 7%;
+
+        .news_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                display: flex;
+                align-items: center;
+                padding-left: 1%;
+                margin: 0;
+            }
+
+            .btn {
+                margin: 1rem;
+            }
+        }
+
+        .news_grid {
+            display: flex;
+            gap: 2%;
+            padding-left: 1%;
+            margin-top: 2rem;
+
+            .news_item {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+
+                .news_image {
+                    height: 12rem;
+                    display: flex;
+                    background-position: 50% 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-top-left-radius: 2%;
+                    border-top-right-radius: 2%;
+                }
+
+                .news_title {
+                    font-weight: bold;
+                    display: flex;
+                    min-height: 4.5rem;
+                    text-align: left;
+                    font-size: 0.85rem;
+                    padding: 1rem 4% 0.8rem;
+                }
+
+                .news_date {
+                    display: flex;
+                    text-align: left;
+                    justify-content: left;
+                    color: rgb(137, 206, 137);
+                    padding: 0 5%;
+                    font-size: 0.8rem;
+                }
+
+                .card_text {
+                    display: flex;
+                    text-align: left;
+                    justify-content: left;
+                    padding: 0.5rem 4% 4%;
+                }
+            }
+
+            .news_image--1 {
+                background-image: url(/img/fondo_form.jpg);
+            }
+
+            .news_image--2 {
+                background-image: url(/img/equipo.jpeg);
+            }
+
+            .news_image--3 {
+                background-image: url(/img/2044.jpg);
+            }
+
+            .news_image--4 {
+                background-image: url(/img/golf-player.jpg);
+            }
+        }
+        .btn-mobile-viewmore {
+            display: none;
+        }
+    }
+    #box10 {
+        display: flex;
+        min-height: 25rem;
+        flex-direction: row;
+    
+        .testimonial-photo {
+            flex: 1;
+            background-image: url(/img/2044.jpg);
+            background-position: 50% 60%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 2%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    
+        .testimonial-content {
+        
+            margin: 2%;
+            margin-bottom: 2%;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            box-shadow: 4px 4px 6px rgb(170, 170, 170);
+    
+            h3 {
+                display: flex;
+                justify-content: left;
+                margin-left: 50px;
+                margin-top: 3%;
+            }
+    
+            h2 {
+                margin-left: 50px;
+            }
+    
+            .card_text {
+                justify-content: left;
+                margin-left: 10px;
+                margin-bottom: 3%;
+            }
+             
+               
+  
+            }
+    
+            .testimonial-quote {
+                display: flex;
+                flex: 0.7;
+                max-height: 165px;
+                flex-direction: column;
+                background-image: url(/img/img.comentario.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+    
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 0.75rem;
+                    line-height: 1.6;
+                    justify-content: center;
+                    padding: 4% 6%;
+                    margin-left: 18%;
+                    margin-right: 14%;
+                    margin-bottom: 15%;
+                }
+            }
+    
+            .testimonial-author {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                margin-bottom: 2%;
+    
+                &_photo {
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    flex: 0.2;
+                    margin: 1%;
+                    margin-left: 20%;
+                    background-image: url(/img/chico2.jpg);
+                    background-position: 80% 20%;
+                    background-size: 130%;
+                    background-repeat: no-repeat;
+                }
+    
+                &_info {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    margin: auto;
+    
+                    span:first-child {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+
+footer {
+    display: flex;
+    height: 280px;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1%;
+    background-color: rgb(137, 206, 137);
+
+    .footer-logo {
+        background-image: url(/img/logo.webp);
+        background-position: 50% 50%;
+        background-size: 15%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex: 2;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        margin: 2%;
+        flex: 1;
+
+        .social-fb {
+            background-image: url(/img/012-simbolo-de-la-aplicacion-de-facebook.png);
+            background-position: 90% 50%;
+            background-size: 3%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex: 1.5;
+            padding-left: 25%;
+        }
+
+        .social-in {
+            background-image: url(/img/013-linkedin.png);
+            background-position: 50% 50%;
+            background-size: 20%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex: 0.5;
+        }
+
+        .social-mail {
+            background-image: url(/img/014-bandeja-de-entrada.png);
+            background-position: 10% 50%;
+            background-size: 3%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex: 1.5;
+            padding-right: 25%;
+        }
+    }
+
+    .footer-text {
+        display: flex;
+        flex: 1;
+        margin: auto;
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+        display: flex;
+        flex: 1;
+
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            margin: 1%;
+            padding-right: 2%;
+            justify-content: space-between;
+
+
+            div {
+                display: flex;
+                align-items: center;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+
+        .footer-copyright {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex: 0.7;
+            font-size: 0.85rem;
+            padding-left: 6%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+@media (max-width: 768px) {
+
+
+
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 5%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-top: 5%;
+    }
+    h3 {
+        font-size: 1.1rem;
+        margin-top: 3%;
+    }
+
+    .card_title {
+        font-size: 1rem;
+        margin: 0.3rem 0 0.3rem;
+        margin-top: 1rem;
+    }
+
+    
+   .btn-card {
+        font-size: 0.75rem;
+        padding: 6px 16px;
+        margin-bottom: 20px;
+    }
+   
+    .card_text {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }   
+    
+
+ header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 5%;
+        position: relative;
+
+        img {
+            height: 70px;
+            width: auto;
+            margin-left: 0;
+            display: block;
+        }
+
+        .hamburger {
+            display: block;
+            font-size: 1.8rem;
+            cursor: pointer;
+            order: 2;
+            position: relative;
+            z-index: 101;
+            margin-top: 10px;
+
+
+            .icon-close {
+                display: none;
+            }
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            top: 120%;
+            right: 0;
+            width: 50%;
+            height: 85vh;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 30px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.4rem;
+                text-align: left;
+                width: 100%;
+                white-space: nowrap;
+
+                i {
+                    display: inline-block !important;
+                }
+            }
+
+            .btn {
+                display: none;
+            }
+        }
+
+        #menu-toggle:checked ~ nav {
+            display: flex;
+        }
+
+        #menu-toggle:checked ~ .hamburger {
+            .icon-open {
+                display: none;
+            }
+
+            .icon-close {
+                display: block;
+            }
+        }
+    }
+
+    main {
+
+        #box1 {
+            min-height: 85vh;
+    
+            .hero-content {
+                
+    
+                .hero-content_text {
+                    font-size: 1rem;
+                }
+    
+                .btn {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    
+        #box2 {
+            display: flex;
+            flex-direction: column;
+            padding: 6% 6%;
+            gap: 1.5rem;
+    
+            .about-image {
+                display: none;
+            }
+    
+            .about-content {
+                p {
+                    padding-right: 0;
+                }
+            }
+        }
+        #box3 {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        
+            .card {
+                flex: 0 0 42%;
+                margin-bottom: 16px;
+        
+                .icon-course,
+                .icon-club,
+                .icon-academy,
+                .icon-fitness {
+                    height: 65px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        #box4 {
+            display: flex;
+            flex-direction: column;
+            padding: 8%;
+        
+            .cards {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 3%;
+                gap: 24px;
+                .card{
+                    width: 85%;
+                    margin: 0 auto;
+                }
+                
+            }
+        }
+        #box5 {
+            flex-direction: column;
+            padding: 8% 6%;
+            min-height: auto;
+        
+            .join-intro {
+                margin-right: 0;
+                margin-top: 0;
+                margin-bottom: 6%;
+                text-align: center;
+                align-items: center;
+            }
+        
+            .join-form {
+                margin: 0 auto;
+                width: 90%;
+        
+                form {
+                    padding: 20px;
+        
+                    .form-field {
+                        width: 100%;
+                        margin-bottom: 2px;
+                    
+                        label {
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            padding-top: 10px;
+                        }
+                    
+                        input {
+                            height: 40px;
+                            border-radius: 4px;
+                            &::placeholder {
+                                font-size: 0.85rem;
+                                padding-top: 10px;
+                            }
+                        }
+                    
+                        textarea {
+                            height: 45px;
+                            border-radius: 4px;
+                            &::placeholder {
+                                font-size: 0.85rem;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+        
+                    .btn {
+                        width: 100%;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+        #box6 {
+            flex-wrap: wrap;
+            margin-left: 30px;
+            margin-right: 0;
+            gap: 20px;
+        
+            .data-block {
+                flex: 0 0 40%;
+                justify-content: center;
+        
+                &_number {
+                    font-size: 1.8rem;
+                }
+        
+                &_label {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+        #box7 {
+            flex-direction: column;
+             padding: 3% 15%;
+        
+            .members-intro {
+             
+                align-items: center;
+
+        
+                h3 {
+                    text-align: center;
+                   
+                }
+        
+                h2 {
+                    text-align: center;
+                    margin-top: 0;
+
+                }
+        
+                .btn {
+                    display: none;
+                }
+            }
+        
+            .member-card {
+                width: 85%;
+                margin: 10px auto 20px auto;
+        
+                .photo-1,
+                .photo-2,
+                .photo-3 {
+                    flex: none;
+                    aspect-ratio: 16 / 10;
+                    height: auto;
+                    background-position: center 20%;
+                }
+        
+                .card_role {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.3rem;
+                }
+            }
+        
+            .btn-mobile-discover {
+                display: block;
+                margin: 0 auto;
+                margin-top: 10%;
+            }
+        }
+        #box8 {
+            padding: 8% 6%;
+        
+            .benefits {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 24px;
+        
+                .benefit {
+                    flex: 0 0 42%;
+
+                    .icon-professional,
+                    .icon-prestigious,
+                    .icon-monthly,
+                    .icon-support {
+                        flex: none;
+                        height: 30px;
+                        background-size: 15%;
+                    }
+                }
+            }
+        }
+        #box9 {
+            padding: 8% 15%;
+            background: linear-gradient(rgb(137, 206, 137), 0.95%, transparent);
+            .news_header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+        
+                .btn {
+                    display: none;
+                }
+            }
+        
+            .news_grid {
+                flex-direction: column;
+                gap: 24px;
+        
+                .news_item {
+                    flex: none;
+                    width: 85%;
+                    margin: 0 auto;
+        
+                    .news_image {
+                        aspect-ratio: 16 / 10;
+                        height: auto;
+                    }
+                }
+            }
+        
+            .btn-mobile-viewmore {
+                display: block;
+                margin: 0 auto;
+                margin-top: 10%;
+            }
+        }
+        #box10 {
+            flex-direction: column;
+            min-height: auto;
+            background-color: rgb(244, 241, 241);
+        
+            .testimonial-photo {
+                display: none;
+            }
+        
+            .testimonial-content {
+                margin: 8% 6%;
+        
+                h3 {
+                    margin-left: 10%;
+                    text-align: center;
+                }
+        
+                h2 {
+                    margin-left: 10%;
+                    text-align: center;
+                }
+        
+                .card_text {
+                    margin-left: 0;
+                    text-align: center;
+                }
+        
+                .testimonial-quote {
+                    span {
+                        
+                        margin-left: 6%;
+                        margin-right: 6%;
+                    }
+                }
+        
+                .testimonial-author {
+                    justify-content: center;
+        
+                    &_photo {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: auto;
+        padding: 6%;
+    
+        .footer-logo {
+            background-size: 40%;
+            min-height: 80px;
+        }
+    
+        .footer-social {
+            justify-content: center;
+            margin: 4% 0;
+    
+            .social-fb,
+            .social-in,
+            .social-mail {
+                flex: none;
+                width: 40px;
+                padding: 0;
+                background-position: center;
+            }
+        }
+    
+        .footer-text {
+            text-align: center;
+            margin: 2% 0 6% 0;
+        }
+    
+        .footer-bottom {
+            flex-direction: column;
+    
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px 40px;
+                margin-bottom: 6%;
+            
+                div {
+                    flex: 0 0 40%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .footer-copyright {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,1289 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  font-family: "Climate Crisis", cursive;
+  font-family: "Inter", sans-serif;
+  color: rgb(84, 82, 82);
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.btn, .btn-card {
+  background-color: rgb(137, 206, 137);
+  color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  margin-top: 8%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(84, 82, 82);
+}
+.btn:hover, .btn-card:hover {
+  background: black;
+  color: rgb(137, 206, 137);
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: rgb(84, 82, 82);
+  display: flex;
+  justify-content: left;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: rgb(137, 206, 137);
+  display: flex;
+}
+
+h4 {
+  color: rgb(137, 206, 137);
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+p {
+  line-height: 1.4;
+  color: rgb(84, 82, 82);
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.card_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0 0.5rem;
+  color: rgb(70, 70, 72);
+}
+.card_title--green {
+  color: rgb(137, 206, 137);
+}
+
+.card_text {
+  display: flex;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+  font-size: 0.9rem;
+  flex: 0.5;
+}
+
+.btn-card {
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  align-self: center;
+}
+
+/* HEADER */
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header img {
+  height: 100%;
+  margin-left: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin-right: 5%;
+}
+header nav .btn, header nav .btn-card {
+  margin: 0;
+  line-height: 1;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: rgb(137, 206, 137);
+}
+header nav a i {
+  display: none !important;
+}
+header #menu-toggle {
+  display: none;
+}
+header .hamburger {
+  display: none;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  /* CHICA GOLF */
+  /* CHICO GOLF */
+  /* TARJETAS */
+  /* tarjetas ladies/kids */
+  /* FORMULARIO */
+  /* Premios */
+  /* Miembros destacados */
+  /* LATEST NEWS */
+}
+main #box1 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url(/img/2038.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  /* TEXTO */
+}
+main #box1 .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+main #box1 .hero-content_title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+main #box1 .hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+main #box1 .hero-content_text {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+main #box1 .hero-content .btn, main #box1 .hero-content .btn-card {
+  margin-top: 60px;
+}
+main #box2 {
+  display: flex;
+  min-height: 30rem;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4%;
+  padding: 4% 6%;
+}
+main #box2 h3 {
+  margin-top: 1.25rem;
+}
+main #box2 h2 {
+  margin-top: 1.875rem;
+}
+main #box2 p {
+  margin-top: 1.25rem;
+}
+main #box2 .about-image {
+  display: flex;
+  flex: 0.5;
+  max-height: 30rem;
+  background-image: url(/img/cerca-joven-hombre-concentrado-disparando-pelota-golf.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+main #box2 .about-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  align-content: center;
+}
+main #box2 .about-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgb(84, 82, 82);
+  padding-right: 10%;
+  padding-top: 1%;
+  margin-bottom: 1rem;
+}
+main #box3 {
+  display: flex;
+  min-height: 17.5rem;
+  flex-direction: row;
+  background: linear-gradient(rgb(137, 206, 137), 0.4%, transparent);
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+main #box3 .card {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+main #box3 .card .icon-course,
+main #box3 .card .icon-club,
+main #box3 .card .icon-academy,
+main #box3 .card .icon-fitness {
+  height: 80px;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+main #box3 .card .icon-course {
+  background-image: url(/img/001-jugador-de-golf.png);
+}
+main #box3 .card .icon-club {
+  background-image: url(/img/002-torneo.png);
+}
+main #box3 .card .icon-academy {
+  background-image: url(/img/003-birrete.png);
+}
+main #box3 .card .icon-fitness {
+  background-image: url(/img/004-levantador-de-pesas.png);
+}
+main #box4 {
+  display: flex;
+  min-height: 35rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 241, 241);
+  border-bottom-left-radius: 2%;
+}
+main #box4 h3 {
+  margin-top: 3%;
+}
+main #box4 .club-content_text {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+main #box4 .cards {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  gap: 6%;
+}
+main #box4 .cards .card {
+  overflow: hidden;
+}
+main #box4 .cards .card .img-team,
+main #box4 .cards .card .img-ladies,
+main #box4 .cards .card .img-kids {
+  aspect-ratio: 3/2;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main #box4 .cards .card .img-team {
+  background-image: url(/img/equipo.jpeg);
+  background-size: 120%;
+}
+main #box4 .cards .card .img-ladies {
+  background-image: url(/img/jugador-golf.jpg);
+  background-size: 110%;
+}
+main #box4 .cards .card .img-kids {
+  background-image: url(/img/niño_golf.jpeg);
+  background-size: 110%;
+}
+main #box4 .cards .card .btn-card {
+  margin-bottom: 20px;
+}
+main #box5 {
+  display: flex;
+  min-height: 30rem;
+  background-image: url(/img/fondo_form\ copia.jpg);
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url(/img/fondo_form\ copia.jpg);
+}
+main #box5 .join-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex: 1;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+main #box5 .join-intro h2 {
+  color: white;
+}
+main #box5 .join-intro_text {
+  color: white;
+  line-height: 1.5;
+}
+main #box5 .join-form {
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex: 1;
+  margin: 60px;
+}
+main #box5 .join-form form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+main #box5 .join-form form .form-field {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+main #box5 .join-form form .form-field_full {
+  width: 100%;
+  margin-bottom: 5px;
+}
+main #box5 .join-form form .form-field label {
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+main #box5 .join-form form .form-field input {
+  border: none;
+  background-color: rgb(196, 224, 196);
+  height: 40px;
+  padding: 6px 10px;
+  padding-top: 10px;
+  border-radius: 6px;
+}
+main #box5 .join-form form .form-field textarea {
+  border: none;
+  background-color: rgb(196, 224, 196);
+  height: 70px;
+  padding: 6px 10px;
+  resize: vertical;
+  padding-top: 10px;
+  border-radius: 6px;
+}
+main #box5 .join-form form .btn, main #box5 .join-form form .btn-card {
+  width: 50%;
+  border-radius: 50px;
+  margin: 10px auto 0;
+  margin-top: 30px;
+}
+main #box6 {
+  display: flex;
+  flex-direction: row;
+  min-height: 10rem;
+  margin: 1%;
+  margin-right: 6%;
+}
+main #box6 .data-block {
+  display: flex;
+  flex: 1;
+}
+main #box6 .data-block > div {
+  display: flex;
+  align-items: center;
+}
+main #box6 .data-block_number {
+  font-size: 2.5rem;
+  flex: 0.3;
+  justify-content: center;
+}
+main #box6 .data-block_plus {
+  font-size: 1.5rem;
+  color: rgb(154, 198, 154);
+  flex: 0.2;
+}
+main #box6 .data-block_label {
+  font-size: 1rem;
+  flex: 0.3;
+  padding-bottom: 12%;
+}
+main #box6 .icon-members,
+main #box6 .icon-trainers,
+main #box6 .icon-professionals,
+main #box6 .icon-awards {
+  flex: 1;
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+}
+main #box6 .icon-members {
+  background-image: url(/img/002-red.png);
+  background-size: 30%;
+}
+main #box6 .icon-trainers {
+  background-image: url(/img/001-usuario.png);
+  background-size: 25%;
+}
+main #box6 .icon-professionals {
+  background-image: url(/img/004-tarjeta-de-miembro.png);
+  background-size: 40%;
+}
+main #box6 .icon-awards {
+  background-image: url(/img/003-medalla.png);
+  background-size: 30%;
+}
+main #box7 {
+  display: flex;
+  min-height: 25rem;
+  padding-top: 4%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background: linear-gradient(rgb(137, 206, 137), 0.4%, transparent);
+}
+main #box7 .btn-mobile-discover {
+  display: none;
+}
+main #box7 .members-intro {
+  display: flex;
+  flex: 1.2;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 16%;
+  margin-left: 1%;
+}
+main #box7 .members-intro h3 {
+  font-size: 1rem;
+  margin-bottom: 10%;
+}
+main #box7 .members-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+main #box7 .members-intro .member_text {
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 1%;
+}
+main #box7 .member-card {
+  display: flex;
+  flex: 1;
+  margin-left: 2%;
+  border-radius: 2%;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 4px 4px 6px rgb(170, 170, 170);
+}
+main #box7 .member-card .card_role {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+main #box7 .member-card .card_social {
+  display: flex;
+  height: 37px;
+  margin-bottom: 1rem;
+}
+main #box7 .member-card .card_text {
+  margin-bottom: 1rem;
+}
+main #box7 .member-card .social-fb,
+main #box7 .member-card .social-in,
+main #box7 .member-card .social-mail {
+  flex: 1;
+}
+main #box7 .photo-1,
+main #box7 .photo-2,
+main #box7 .photo-3 {
+  display: flex;
+  flex: 5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+main #box7 .photo-1 {
+  background-image: url(/img/chico1.jpg);
+  background-position: 50% 50%;
+}
+main #box7 .photo-2 {
+  background-image: url(/img/chico2.jpg);
+  background-position: 50% 50%;
+}
+main #box7 .photo-3 {
+  background-image: url(/img/chica3.jpg);
+  background-position: 50% 30%;
+}
+main #box7 .social-fb,
+main #box7 .social-in,
+main #box7 .social-mail {
+  display: flex;
+  flex: 1;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+}
+main #box7 .social-fb {
+  background-image: url(/img/012-simbolo-de-la-aplicacion-de-facebook.png);
+  background-position: 90% 50%;
+}
+main #box7 .social-in {
+  background-image: url(/img/013-linkedin.png);
+  background-position: 50% 50%;
+}
+main #box7 .social-mail {
+  background-image: url(/img/014-bandeja-de-entrada.png);
+  background-position: 10% 50%;
+}
+main #box8 {
+  background-color: rgb(244, 241, 241);
+  display: flex;
+  min-height: 28rem;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 4%;
+}
+main #box8 h2 {
+  display: flex;
+  justify-content: center;
+}
+main #box8 h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+main #box8 p {
+  text-align: center;
+}
+main #box8 .benefits {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+main #box8 .benefits .benefit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+main #box8 .benefits .benefit .card_title {
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  display: flex;
+  flex: 0.1;
+}
+main #box8 .benefits .benefit .card_text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  display: flex;
+  flex: 0.3;
+  padding: 2%;
+}
+main #box8 .benefits .icon-professional {
+  background-image: url(/img/010-gerente.png);
+  background-size: 15%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 0.2;
+}
+main #box8 .benefits .icon-prestigious {
+  background-image: url(/img/006-prestigio.png);
+  background-size: 15%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 0.2;
+}
+main #box8 .benefits .icon-monthly {
+  background-image: url(/img/007-calendario.png);
+  background-size: 15%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 0.2;
+}
+main #box8 .benefits .icon-support {
+  background-image: url(/img/008-apoyo-tecnico.png);
+  background-size: 15%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 0.2;
+}
+main #box9 {
+  background-color: rgb(244, 241, 241);
+  background: linear-gradient(rgb(137, 206, 137), 0.4%, transparent);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 7%;
+}
+main #box9 .news_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #box9 .news_header h2 {
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+  margin: 0;
+}
+main #box9 .news_header .btn, main #box9 .news_header .btn-card {
+  margin: 1rem;
+}
+main #box9 .news_grid {
+  display: flex;
+  gap: 2%;
+  padding-left: 1%;
+  margin-top: 2rem;
+}
+main #box9 .news_grid .news_item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+main #box9 .news_grid .news_item .news_image {
+  height: 12rem;
+  display: flex;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+main #box9 .news_grid .news_item .news_title {
+  font-weight: bold;
+  display: flex;
+  min-height: 4.5rem;
+  text-align: left;
+  font-size: 0.85rem;
+  padding: 1rem 4% 0.8rem;
+}
+main #box9 .news_grid .news_item .news_date {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  color: rgb(137, 206, 137);
+  padding: 0 5%;
+  font-size: 0.8rem;
+}
+main #box9 .news_grid .news_item .card_text {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  padding: 0.5rem 4% 4%;
+}
+main #box9 .news_grid .news_image--1 {
+  background-image: url(/img/fondo_form.jpg);
+}
+main #box9 .news_grid .news_image--2 {
+  background-image: url(/img/equipo.jpeg);
+}
+main #box9 .news_grid .news_image--3 {
+  background-image: url(/img/2044.jpg);
+}
+main #box9 .news_grid .news_image--4 {
+  background-image: url(/img/golf-player.jpg);
+}
+main #box9 .btn-mobile-viewmore {
+  display: none;
+}
+main #box10 {
+  display: flex;
+  min-height: 25rem;
+  flex-direction: row;
+}
+main #box10 .testimonial-photo {
+  flex: 1;
+  background-image: url(/img/2044.jpg);
+  background-position: 50% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+main #box10 .testimonial-content {
+  margin: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-shadow: 4px 4px 6px rgb(170, 170, 170);
+}
+main #box10 .testimonial-content h3 {
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  margin-top: 3%;
+}
+main #box10 .testimonial-content h2 {
+  margin-left: 50px;
+}
+main #box10 .testimonial-content .card_text {
+  justify-content: left;
+  margin-left: 10px;
+  margin-bottom: 3%;
+}
+main #box10 .testimonial-quote {
+  display: flex;
+  flex: 0.7;
+  max-height: 165px;
+  flex-direction: column;
+  background-image: url(/img/img.comentario.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main #box10 .testimonial-quote span {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  justify-content: center;
+  padding: 4% 6%;
+  margin-left: 18%;
+  margin-right: 14%;
+  margin-bottom: 15%;
+}
+main #box10 .testimonial-author {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+main #box10 .testimonial-author_photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex: 0.2;
+  margin: 1%;
+  margin-left: 20%;
+  background-image: url(/img/chico2.jpg);
+  background-position: 80% 20%;
+  background-size: 130%;
+  background-repeat: no-repeat;
+}
+main #box10 .testimonial-author_info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: auto;
+}
+main #box10 .testimonial-author_info span:first-child {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  height: 280px;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 1%;
+  background-color: rgb(137, 206, 137);
+}
+footer .footer-logo {
+  background-image: url(/img/logo.webp);
+  background-position: 50% 50%;
+  background-size: 15%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 2;
+}
+footer .footer-social {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  flex: 1;
+}
+footer .footer-social .social-fb {
+  background-image: url(/img/012-simbolo-de-la-aplicacion-de-facebook.png);
+  background-position: 90% 50%;
+  background-size: 3%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 1.5;
+  padding-left: 25%;
+}
+footer .footer-social .social-in {
+  background-image: url(/img/013-linkedin.png);
+  background-position: 50% 50%;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 0.5;
+}
+footer .footer-social .social-mail {
+  background-image: url(/img/014-bandeja-de-entrada.png);
+  background-position: 10% 50%;
+  background-size: 3%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 1.5;
+  padding-right: 25%;
+}
+footer .footer-text {
+  display: flex;
+  flex: 1;
+  margin: auto;
+  font-size: 0.85rem;
+}
+footer .footer-bottom {
+  font-size: 0.85rem;
+  display: flex;
+  flex: 1;
+}
+footer .footer-bottom .footer-links {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 1%;
+  padding-right: 2%;
+  justify-content: space-between;
+}
+footer .footer-bottom .footer-links div {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .footer-links a {
+  color: black;
+  text-decoration: none;
+}
+footer .footer-bottom .footer-links a:hover {
+  color: white;
+}
+footer .footer-bottom .footer-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 0.7;
+  font-size: 0.85rem;
+  padding-left: 6%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+    margin-top: 5%;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 5%;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 3%;
+  }
+  .card_title {
+    font-size: 1rem;
+    margin: 0.3rem 0 0.3rem;
+    margin-top: 1rem;
+  }
+  .btn-card {
+    font-size: 0.75rem;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+  }
+  .card_text {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 5%;
+    position: relative;
+  }
+  header img {
+    height: 70px;
+    width: auto;
+    margin-left: 0;
+    display: block;
+  }
+  header .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    order: 2;
+    position: relative;
+    z-index: 101;
+    margin-top: 10px;
+  }
+  header .hamburger .icon-close {
+    display: none;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 50%;
+    height: 85vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  header nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.4rem;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+  }
+  header nav a i {
+    display: inline-block !important;
+  }
+  header nav .btn, header nav .btn-card {
+    display: none;
+  }
+  header #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+  header #menu-toggle:checked ~ .hamburger .icon-open {
+    display: none;
+  }
+  header #menu-toggle:checked ~ .hamburger .icon-close {
+    display: block;
+  }
+  main #box1 {
+    min-height: 85vh;
+  }
+  main #box1 .hero-content .hero-content_text {
+    font-size: 1rem;
+  }
+  main #box1 .hero-content .btn, main #box1 .hero-content .btn-card {
+    margin-bottom: 80px;
+  }
+  main #box2 {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 6%;
+    gap: 1.5rem;
+  }
+  main #box2 .about-image {
+    display: none;
+  }
+  main #box2 .about-content p {
+    padding-right: 0;
+  }
+  main #box3 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  main #box3 .card {
+    flex: 0 0 42%;
+    margin-bottom: 16px;
+  }
+  main #box3 .card .icon-course,
+main #box3 .card .icon-club,
+main #box3 .card .icon-academy,
+main #box3 .card .icon-fitness {
+    height: 65px;
+    margin-top: 15px;
+  }
+  main #box4 {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+  }
+  main #box4 .cards {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+    gap: 24px;
+  }
+  main #box4 .cards .card {
+    width: 85%;
+    margin: 0 auto;
+  }
+  main #box5 {
+    flex-direction: column;
+    padding: 8% 6%;
+    min-height: auto;
+  }
+  main #box5 .join-intro {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 6%;
+    text-align: center;
+    align-items: center;
+  }
+  main #box5 .join-form {
+    margin: 0 auto;
+    width: 90%;
+  }
+  main #box5 .join-form form {
+    padding: 20px;
+  }
+  main #box5 .join-form form .form-field {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  main #box5 .join-form form .form-field label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .form-field input {
+    height: 40px;
+    border-radius: 4px;
+  }
+  main #box5 .join-form form .form-field input::-moz-placeholder {
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .form-field input:-ms-input-placeholder {
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .form-field input::placeholder {
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .form-field textarea {
+    height: 45px;
+    border-radius: 4px;
+  }
+  main #box5 .join-form form .form-field textarea::-moz-placeholder {
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .form-field textarea:-ms-input-placeholder {
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .form-field textarea::placeholder {
+    font-size: 0.85rem;
+    padding-top: 10px;
+  }
+  main #box5 .join-form form .btn, main #box5 .join-form form .btn-card {
+    width: 100%;
+    margin-top: 12px;
+  }
+  main #box6 {
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 0;
+    gap: 20px;
+  }
+  main #box6 .data-block {
+    flex: 0 0 40%;
+    justify-content: center;
+  }
+  main #box6 .data-block_number {
+    font-size: 1.8rem;
+  }
+  main #box6 .data-block_label {
+    font-size: 0.85rem;
+  }
+  main #box7 {
+    flex-direction: column;
+    padding: 3% 15%;
+  }
+  main #box7 .members-intro {
+    align-items: center;
+  }
+  main #box7 .members-intro h3 {
+    text-align: center;
+  }
+  main #box7 .members-intro h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  main #box7 .members-intro .btn, main #box7 .members-intro .btn-card {
+    display: none;
+  }
+  main #box7 .member-card {
+    width: 85%;
+    margin: 10px auto 20px auto;
+  }
+  main #box7 .member-card .photo-1,
+main #box7 .member-card .photo-2,
+main #box7 .member-card .photo-3 {
+    flex: none;
+    aspect-ratio: 16/10;
+    height: auto;
+    background-position: center 20%;
+  }
+  main #box7 .member-card .card_role {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  main #box7 .btn-mobile-discover {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+  main #box8 {
+    padding: 8% 6%;
+  }
+  main #box8 .benefits {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  main #box8 .benefits .benefit {
+    flex: 0 0 42%;
+  }
+  main #box8 .benefits .benefit .icon-professional,
+main #box8 .benefits .benefit .icon-prestigious,
+main #box8 .benefits .benefit .icon-monthly,
+main #box8 .benefits .benefit .icon-support {
+    flex: none;
+    height: 30px;
+    background-size: 15%;
+  }
+  main #box9 {
+    padding: 8% 15%;
+    background: linear-gradient(rgb(137, 206, 137), 0.95%, transparent);
+  }
+  main #box9 .news_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  main #box9 .news_header .btn, main #box9 .news_header .btn-card {
+    display: none;
+  }
+  main #box9 .news_grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+  main #box9 .news_grid .news_item {
+    flex: none;
+    width: 85%;
+    margin: 0 auto;
+  }
+  main #box9 .news_grid .news_item .news_image {
+    aspect-ratio: 16/10;
+    height: auto;
+  }
+  main #box9 .btn-mobile-viewmore {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+  main #box10 {
+    flex-direction: column;
+    min-height: auto;
+    background-color: rgb(244, 241, 241);
+  }
+  main #box10 .testimonial-photo {
+    display: none;
+  }
+  main #box10 .testimonial-content {
+    margin: 8% 6%;
+  }
+  main #box10 .testimonial-content h3 {
+    margin-left: 10%;
+    text-align: center;
+  }
+  main #box10 .testimonial-content h2 {
+    margin-left: 10%;
+    text-align: center;
+  }
+  main #box10 .testimonial-content .card_text {
+    margin-left: 0;
+    text-align: center;
+  }
+  main #box10 .testimonial-content .testimonial-quote span {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  main #box10 .testimonial-content .testimonial-author {
+    justify-content: center;
+  }
+  main #box10 .testimonial-content .testimonial-author_photo {
+    margin-left: 0;
+  }
+  footer {
+    height: auto;
+    padding: 6%;
+  }
+  footer .footer-logo {
+    background-size: 40%;
+    min-height: 80px;
+  }
+  footer .footer-social {
+    justify-content: center;
+    margin: 4% 0;
+  }
+  footer .footer-social .social-fb,
+footer .footer-social .social-in,
+footer .footer-social .social-mail {
+    flex: none;
+    width: 40px;
+    padding: 0;
+    background-position: center;
+  }
+  footer .footer-text {
+    text-align: center;
+    margin: 2% 0 6% 0;
+  }
+  footer .footer-bottom {
+    flex-direction: column;
+  }
+  footer .footer-bottom .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 40px;
+    margin-bottom: 6%;
+  }
+  footer .footer-bottom .footer-links div {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-bottom .footer-copyright {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
